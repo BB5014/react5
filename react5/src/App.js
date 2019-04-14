@@ -55,14 +55,17 @@ getEmployee () {
 
 render () {
   return ( 
+    <div>
 <GenerateEmployee  selectEmployee={() =>  this.getEmployee()}  />,
 
 
-//il reste  à modifier l'appel au composant DisplayEmployee afin qu'il affiche l'employé récupéré
+// {/* il reste  à modifier l'appel au composant DisplayEmployee afin qu'il affiche l'employé récupéré */}
 
 <DisplayEmployee  employee={this.state.employee}  /> 
-  )};
-}
+</div>
+  )}
+};
+
 export default App;
 
 //1er exercice : création composants
